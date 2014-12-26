@@ -1,0 +1,29 @@
+#for a single nanodomain:
+
+graphics opengl
+dim 3
+species ca cam ca_cam
+
+#difcs need lookup
+difc ca
+difc cam
+difc ca_cam
+
+time_start
+time_stop
+time_step
+
+#limited in a single nanodomain?
+boundaries
+
+
+#what are these mols?
+mol
+
+#reactions?
+reaction back ca_cam -> ca + cam brate
+reaction fwd  ca + cam -> ca_cam frate
+confspread_radius fwd 5
+
+
+end_file
