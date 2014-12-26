@@ -1,0 +1,16 @@
+plot "bounce3_red.txt" using 1:6 title "<xx> red" with lines, \
+     "bounce3_red.txt" using 1:7 title "<xy> red" with lines, \
+     "bounce3_red.txt" using 1:8 title "<xz> red" with lines, \
+     "bounce3_red.txt" using 1:9 title "<yx> red" with lines, \
+     "bounce3_red.txt" using 1:10 title "<yy> red" with lines, \
+     "bounce3_red.txt" using 1:11 title "<yz> red" with lines, \		
+     "bounce3_red.txt" using 1:12 title "<zx> red" with lines, \
+     "bounce3_red.txt" using 1:13 title "<zy> red" with lines, \
+     "bounce3_red.txt" using 1:14 title "<zx> red" with lines, \
+     "bounce3_green.txt" using 1:3 title "<x> green" with lines, \
+     "bounce3_green.txt" using 1:4 title "<y> green" with lines, \
+     "bounce3_green.txt" using 1:5 title "<z> green" with lines
+set terminal pngcairo enhanced font 'verdana,10'
+set xlabel "time"
+set output "bounce3_meanpos.png"
+replot
